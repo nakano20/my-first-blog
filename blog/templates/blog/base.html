@@ -9,12 +9,14 @@
     </head>
     <body>
         <div class="page-header">
-            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <!--<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>-->
             <h1><a href="/">ナオキの災害ブログ</a></h1>
         </div>
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
+                  <!--<textarea name="comment" cols="40" rows="8"></textarea> -->
+
                     {% block content %}
                     {% endblock %}
                 </div>
