@@ -5,7 +5,7 @@
     {% if user.is_authenticated %}
     <a class="post-new btn btn-default" href="{% url 'post_new' %}"><span class="glyphicon glyphicon-pencil"></span> 災害があった</a>
   {% else %}
-  <a class="post-new btn btn-default" href="/admin"><span class="glyphicon glyphicon-pencil"></span> 災害があった</a>
+  <a class="post-new btn btn-default" href="{% url 'index' %}"><span class="glyphicon glyphicon-pencil"></span> 災害があった</a>
   {% endif %}
   </div>
     {% for post in posts %}
@@ -13,7 +13,7 @@
             <div class="date">
                 {{ post.published_date }}
             </div>
-            
+
             <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}({{ post.location }})</a>
 
             </h2>
