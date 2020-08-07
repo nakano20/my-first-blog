@@ -67,6 +67,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'social_django.context_processors.backends',  # これを追加
                 'social_django.context_processors.login_redirect',
+                'social_django.context_processors.login_redirect',
             ],
         },
     },
@@ -140,6 +141,6 @@ STATIC_URL = '/static/'
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'home'
 
-STATICFILES_DIRS = (
-  os.path.join(BASE_DIR, 'static/'),
-)
+#STATICFILES_DIRS = (
+ # os.path.join(BASE_DIR, 'static/'),
+#)
